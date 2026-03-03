@@ -2,7 +2,6 @@
   <img src="c-suite-skills.png" alt="C-Suite Skills" width="600" />
   <h1>C-Suite Skills</h1>
   <p><strong>A full c-suite that fits in a git repo.</strong></p>
-  <p>Ten executive role skills for Claude Code — CEO, CMO, CPO, COO, CFO, CTO, VP Sales, CHRO, and more — so you get real strategic work done, not generic advice.</p>
 
   <a href="https://skills.sh/pollow/c-suite-skills"><img src="https://img.shields.io/badge/skills.sh-c--suite--skills-blue" alt="skills.sh" /></a>
   <a href="https://github.com/pollow/c-suite-skills/blob/main/LICENSE"><img src="https://img.shields.io/github/license/pollow/c-suite-skills" alt="License" /></a>
@@ -12,8 +11,7 @@
 
 ## Manifesto
 
-> Worried about AI replacing your job? You're thinking too small.
-> Replace the whole leadership team.
+> Worried about AI replacing your job? Replace the whole leadership team instead.
 
 > Why pay $1M/year for a CEO when your Claude subscription comes with one?
 > Available 24/7. No equity. No off-sites in Scottsdale.
@@ -44,22 +42,11 @@ Fire your executives. Hire these instead.
 npx skills add pollow/c-suite-skills
 ```
 
-Or a single role:
-```bash
-npx skills add pollow/c-suite-skills --skill ceo
-```
-
-Or via Claude Code:
-```
-/plugin install ceo@c-suite-skills
-```
-
 ---
 
 ## Quick Start
 
-1. **Run `/c-suite-onboarding`** — answers ~8 questions about your project or company.
-   Saves a `company-profile.md` that every role reads before doing anything.
+1. **Run `/c-suite-onboarding`** to build a company profile.
 2. **Run `/ceo`** with a question, problem, or objective.
    The CEO challenges your thinking, spots the gaps you missed, and dispatches
    the right specialists to produce actual deliverables.
@@ -68,7 +55,7 @@ Or via Claude Code:
 /ceo We're launching in 6 weeks and I have no idea what to cut. Help.
 ```
 
-That's it. You have a leadership team.
+That's it. You have a seasoned leadership team working for you.
 
 ---
 
@@ -77,6 +64,7 @@ That's it. You have a leadership team.
 | Skill | Role | What they do |
 |-------|------|-------------|
 | `/c-suite-onboarding` | Setup | Interviews you about your project. Briefs the whole team. |
+| `/board-meeting` | The whole room | Status review. Reads what you've done. Tells you what to do next. |
 | `/ceo` | Chief Executive Officer | Runs point. Challenges assumptions. Delegates to the right people. |
 | `/cmo` | Chief Marketing Officer | Competitor intel, positioning, go-to-market. Does the research you've been putting off. |
 | `/cpo` | Chief Product Officer | Scopes the MVP, cuts the bloat, writes the user stories. |
@@ -85,7 +73,6 @@ That's it. You have a leadership team.
 | `/cto` | Chief Technology Officer | Architecture, stack decisions, build-vs-buy. No resume-driven development. |
 | `/vp-sales` | VP of Sales | ICP, outreach sequences, pipeline. Closes the loop between product and revenue. |
 | `/chro` | Chief People Officer | Hiring plans, org structure, comp benchmarking. Builds the team when you're ready to stop being the only one. |
-| `/board-meeting` | The whole room | Status review. Reads what you've done. Tells you what to do next. |
 
 ---
 
@@ -160,3 +147,7 @@ Template is in `skills/_role-template/`. Drop a new `SKILL.md` under `skills/` a
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or any AI tool that supports the [Agent Skills standard](https://agentskills.io)
 
 ---
+
+## Contribution
+
+We would love to lean on your executive and founder experience. Please feel free to share your thoughts or submit a PR anytime.
