@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="c-suite-skills.png" alt="C-Suite Skills" width="180" />
+  <img src="c-suite-skills.png" alt="C-Suite Skills" width="600" />
   <h1>C-Suite Skills</h1>
   <p><strong>An AI-powered executive team for solo founders.</strong></p>
   <p>Ten executive role skills for Claude Code — CEO, CMO, CPO, COO, CFO, CTO, VP Sales, CHRO, and more — so you get real strategic work done, not generic advice.</p>
