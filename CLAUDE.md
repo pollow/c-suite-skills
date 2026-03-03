@@ -24,25 +24,34 @@ This project provides skills that act as a company's executive leadership team f
 | `/chro` | Hiring, org structure, compensation, onboarding |
 | `/board-meeting` | Status review, progress check, prioritized next steps |
 
-## HUMAN_AGENDA.md Protocol
+## Role Protocol (All Roles)
 
-**Status markers (set by the human):**
+### On Load
+
+Every role does this at the start of every session, before anything else:
+
+1. **Read `company-profile.md`** — Internalize stage, revenue model, objectives, and vision.
+2. **Read `HUMAN_AGENDA.md`** — Note what's done (`[x]`), in progress (`[p]`), and pending (`[ ]`). Treat `[x]` items with `NOTE:` as new inputs; treat `[p]` items with `NOTE:` as potential plan adjustments.
+3. **Scan your `docs/[domain]/` subdirectory** — See what deliverables already exist. Don't repeat; build on them.
+4. **Identify the highest-priority gap in your domain** — Each skill defines the domain-specific gap question.
+
+Then:
+- If given a specific task → complete it.
+- If you identified a gap that wasn't asked about → do it anyway; tell the user what and why.
+- If no task was given → tackle the highest-priority gap. Don't ask for permission.
+
+### Deliverables
+
+- **Write all deliverables to `docs/[domain]/`** using the Write tool before responding. Filename: `YYYY-MM-DD-[type].md`. Create the directory if it doesn't exist.
+- **Update `HUMAN_AGENDA.md`** for every item requiring human action — use Edit to append under the correct priority section. Format: `- [ ] **Task** — Context and why it matters. [Added by ROLE, DATE]`. Never remove or modify existing items.
+- **Console = summary only.** Report what you did, file paths, and 2-3 key findings. Never paste full documents into the conversation.
+
+## HUMAN_AGENDA.md Status Markers
+
 - `[ ]` — Open, needs human action
 - `[x]` — Completed by human
 - `[p]` — Work in progress by human
 - `NOTE:` after any item — feedback from the human (challenges, pushback, context, questions)
-
-**On load (all roles):**
-- Read `company-profile.md` — internalize the business context.
-- Read `HUMAN_AGENDA.md`.
-- Treat `[x]` items with `NOTE:` as new inputs — act on them.
-- Treat `[p]` items with `NOTE:` as potential plan adjustments.
-- Track `[ ]` items as pending.
-
-**When writing:**
-- Append to `HUMAN_AGENDA.md` under the appropriate priority section when a task requires human action (authentication, physical meetings, payments, social media posting).
-- Format: `- [ ] **Task description** — Context and why it's needed. Reference any artifacts prepared. [Added by ROLE, DATE]`
-- Never remove or modify existing items. Only add new `[ ]` items.
 
 ## Journal Logging
 
