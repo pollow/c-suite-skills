@@ -1,31 +1,66 @@
-# C-Suite
+<div align="center">
+  <img src="c-suite-skills.png" alt="C-Suite Skills" width="180" />
+  <h1>C-Suite Skills</h1>
+  <p><strong>An AI-powered executive team for solo founders.</strong></p>
+  <p>Ten executive role skills for Claude Code — CEO, CMO, CPO, COO, CFO, CTO, VP Sales, CHRO, and more — so you get real strategic work done, not generic advice.</p>
 
-An AI-powered executive team for solo founders. Run Claude Code skills that behave like a CEO, CMO, CPO, COO — and more — so you get real strategic work, not generic advice.
+  <a href="https://skills.sh/pollow/c-suite-skills"><img src="https://img.shields.io/badge/skills.sh-c--suite--skills-blue" alt="skills.sh" /></a>
+  <a href="https://github.com/pollow/c-suite-skills/blob/main/LICENSE"><img src="https://img.shields.io/github/license/pollow/c-suite-skills" alt="License" /></a>
+</div>
+
+---
+
+## Install
+
+```bash
+# Install all skills (works with Claude Code, Cursor, Windsurf, and 16+ AI tools)
+npx skills add pollow/c-suite-skills
+
+# Install a single role
+npx skills add pollow/c-suite-skills --skill ceo
+```
+
+Or via the Claude Code plugin marketplace:
+```
+/plugin install ceo@c-suite-skills
+```
+
+---
 
 ## Quick Start
 
-1. **Clone this repo** into your project or a dedicated workspace.
-2. **Run `/c-suite-onboarding`** in Claude Code. It asks ~8 questions about your business and saves a `company-profile.md` that all roles reference.
-3. **Run `/ceo`** with a question or objective. The CEO will challenge your thinking, identify gaps, and dispatch specialist roles to do real work.
+1. **Install** using one of the commands above.
+2. **Run `/c-suite-onboarding`** — a guided ~8-question survey that captures your business context into `company-profile.md`. All roles read this file.
+3. **Run `/ceo`** with a question or objective. The CEO challenges your thinking, identifies gaps, and dispatches specialist roles to do real work.
+
+```
+/ceo I want to build a SaaS for [X]. What should I focus on first?
+```
 
 That's it. You're running a leadership team.
 
-## What You Get
+---
 
-Each role is an **operator**, not an advisor. They do real work — web research, competitive analysis, financial modeling, product scoping, execution planning — and produce actual deliverables saved to `docs/`.
+## Skills
 
 | Skill | Role | What it does |
 |-------|------|-------------|
-| `/c-suite-onboarding` | — | Guided survey to capture your business context |
+| `/c-suite-onboarding` | Setup | Guided survey to capture your business context |
 | `/ceo` | Chief Executive Officer | Orchestrates roles, challenges assumptions, drives execution |
 | `/cmo` | Chief Marketing Officer | Competitor research, positioning, go-to-market strategy |
 | `/cpo` | Chief Product Officer | MVP scoping, user stories, feature prioritization |
-| `/coo` | Chief Operating Officer | Processes, tool evaluation, operational planning |
+| `/coo` | Chief Operating Officer | Processes, tool evaluation, 90-day execution planning |
+| `/cfo` | Chief Financial Officer | Pricing, unit economics, runway, financial modeling |
+| `/cto` | Chief Technology Officer | Architecture, tech stack, build-vs-buy decisions |
+| `/vp-sales` | VP of Sales | ICP, outreach templates, pipeline strategy |
+| `/chro` | Chief People Officer | Hiring plans, org structure, compensation benchmarking |
 | `/board-meeting` | All roles | Status review with prioritized next steps |
 
-More roles (CFO, CTO, VP Sales, VP People) are defined inline in the CEO skill and can be dispatched as sub-agents. Dedicated skill files for these roles can be added using the template in `skills/_role-template/`.
+---
 
 ## How It Works
+
+Every role is an **operator**, not an advisor. They do real work — web research, competitive analysis, financial modeling, product scoping — and produce deliverables saved to `docs/`.
 
 ### The Feedback Loop
 
@@ -37,56 +72,52 @@ You work on tasks ──→ Mark [x] in HUMAN_AGENDA.md ──→ Run /board-mee
 
 ### Key Files
 
-| File | Purpose | Who writes it |
-|------|---------|---------------|
-| `company-profile.md` | Your business context | Created by `/c-suite-onboarding` |
-| `HUMAN_AGENDA.md` | Action items requiring your involvement | C-suite adds items; you update status |
-| `JOURNAL.md` | Log of all board meetings and CEO sessions | Written automatically by `/ceo` and `/board-meeting` |
-| `docs/` | Deliverables (research, plans, specs) | Created by individual roles |
+| File | Purpose |
+|------|---------|
+| `company-profile.md` | Your business context — created by `/c-suite-onboarding`, read by all roles |
+| `HUMAN_AGENDA.md` | Two-way task list — c-suite adds items, you update status |
+| `JOURNAL.md` | Append-only log of board meetings and CEO sessions |
+| `docs/` | Role deliverables — research, plans, specs |
 
 ### HUMAN_AGENDA.md
 
-This is the two-way communication channel between you and the c-suite.
+This is the communication channel between you and the c-suite. Update item status and add `NOTE:` to give feedback:
 
-**Updating status:**
-- `[ ]` — Open, needs your action
-- `[x]` — You completed it
-- `[p]` — You're working on it
-
-**Giving feedback:** Add `NOTE:` after any item to communicate back. Examples:
 ```markdown
-- [x] **Customer discovery interviews** NOTE: Visited 8 restaurants. 6/8 said they'd pay $49/mo. Two said they already use MarketMan but hate it.
-- [p] **Register domain name** NOTE: narrowed down to 3 options, need help deciding
-- [ ] **Request MarketMan demo** NOTE: Their signup requires a business email, I don't have one yet
+- [x] **Customer discovery interviews** NOTE: Visited 8 restaurants. 6/8 said they'd pay $49/mo.
+- [p] **Register domain name** NOTE: Narrowed to 3 options, need help deciding.
+- [ ] **Request competitor demo** NOTE: Their signup requires a business email I don't have yet.
 ```
 
-The c-suite reads these notes and adjusts strategy accordingly.
+The c-suite reads your notes and adjusts strategy accordingly.
+
+---
 
 ## Example Prompts
 
-**First session:**
 ```
-/ceo I want to build a SaaS tool for [X]. What should I focus on first?
-```
+# First session
+/c-suite-onboarding
 
-**After doing customer discovery:**
-```
+# Strategic questions
+/ceo I want to build a SaaS tool for [X]. What should I focus on first?
+/cmo Who are our top 5 competitors and where are they weakest?
+/cpo What should be in the MVP and what should we cut?
+/cfo Model out pricing at $49/mo with 100 customers. What's the unit economics?
+/cto Should we build this ourselves or use an existing platform?
+
+# Weekly check-in (after marking completed tasks in HUMAN_AGENDA.md)
 /board-meeting
 ```
-(Mark your completed items in HUMAN_AGENDA.md first)
 
-**Specific questions:**
-```
-/cmo Who are our top 5 competitors and where are they weak?
-/cpo What should be in the MVP and what should we cut?
-/coo Give me a week-by-week execution plan for the next 90 days.
-```
+---
 
-## Adding New Roles
+## Adding Roles
 
-See `skills/_role-template/ROLE-TEMPLATE.md` for the template. Create a new directory under `skills/`, add a `SKILL.md`, and the role becomes available.
+See `skills/_role-template/ROLE-TEMPLATE.md`. Create a new directory under `skills/`, add a `SKILL.md` with the required frontmatter, and the role is available immediately.
+
+---
 
 ## Requirements
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI
-- Skills must be in the `skills/` directory of your project
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or any AI coding tool that supports the [Agent Skills standard](https://agentskills.io)
