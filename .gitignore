@@ -1,0 +1,11 @@
+# C-suite deliverables — business-specific, not part of the template
+docs/operations/
+docs/plans/
+docs/product/
+docs/research/
+docs/sales/
+docs/hr/
+docs/finance/
+
+# Journal contains session history
+JOURNAL.md
