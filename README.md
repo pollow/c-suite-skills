@@ -84,7 +84,7 @@ That's it. You have a leadership team.
 | `/cfo` | Chief Financial Officer | Unit economics, pricing models, runway. Tells you what the numbers actually mean. |
 | `/cto` | Chief Technology Officer | Architecture, stack decisions, build-vs-buy. No resume-driven development. |
 | `/vp-sales` | VP of Sales | ICP, outreach sequences, pipeline. Closes the loop between product and revenue. |
-| `/chro` | Chief People Officer | Hiring plans, org structure, comp benchmarking. For when you need to grow beyond just you. |
+| `/chro` | Chief People Officer | Hiring plans, org structure, comp benchmarking. Builds the team when you're ready to stop being the only one. |
 | `/board-meeting` | The whole room | Status review. Reads what you've done. Tells you what to do next. |
 
 ---
@@ -151,7 +151,7 @@ They read it. They adjust.
 ## Adding Roles
 
 **Hire anyone. Instantly. No recruiter fee.**
-See `skills/_role-template/ROLE-TEMPLATE.md`. Drop a new `SKILL.md` under `skills/` and they start immediately.
+Template is in `skills/_role-template/`. Drop a new `SKILL.md` under `skills/` and they start immediately.
 
 ---
 
