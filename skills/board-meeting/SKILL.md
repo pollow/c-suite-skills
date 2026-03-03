@@ -48,7 +48,7 @@ Dispatch all roles that have existing deliverables or pending HUMAN_AGENDA items
 **Sub-agent output format:**
 - **Status:** What's on track vs. at risk in your domain
 - **Completed item impact:** How do completed HUMAN_AGENDA items change your recommendations
-- **New action items:** What should the founder do next (with priority)
+- **New action items:** What the c-suite can execute independently right now. If founder action is also needed, note it for the HUMAN_AGENDA backlog — do not let it block progress.
 - **Updated deliverables:** Any files that need updating based on new information
 
 ### 3. Synthesize and Prioritize
@@ -94,4 +94,5 @@ Present to the user in this format:
 | Repeating old information without new synthesis | Every meeting should surface something new or reprioritize based on new data. |
 | Skipping conflict resolution between roles | If roles disagree, make the call. That's the CEO's job. |
 | Not updating HUMAN_AGENDA.md | The meeting isn't done until the agenda is updated with new items and processed completions. |
+| Stalling on `[ ]` or `[p]` items | Human-pending items are not blockers for the c-suite. Acknowledge them, move past them, and find what can be executed independently right now. |
 

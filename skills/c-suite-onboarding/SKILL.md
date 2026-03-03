@@ -25,7 +25,7 @@ digraph onboarding {
     "Ask: Update or start fresh?" [shape=box];
     "User says update" [shape=box];
     "User says fresh" [shape=box];
-    "Run 8-question survey" [shape=box];
+    "Run 10-question survey" [shape=box];
     "Write company-profile.md" [shape=box];
     "Confirm to user" [shape=doublecircle];
 
@@ -174,9 +174,38 @@ options:
     description: "I'll describe what I want to achieve in the next quarter"
 ```
 
+### Question 9: Founder Status
+
+```
+header: "Your Status"
+question: "What's your current primary situation?"
+options:
+  - label: "Employed full-time elsewhere"
+    description: "Working at another company while building this"
+  - label: "Dedicated founder"
+    description: "Full-time on this project"
+  - label: "Student"
+    description: "In school while building this"
+  - label: "Freelance / Consulting"
+    description: "Independent contractor; this is a side or primary project"
+```
+User can also select "Other" and describe their situation.
+
+### Question 10: Location
+
+```
+header: "Location"
+question: "Where are you based? Country and state/region — this shapes legal and compliance context."
+options:
+  - label: "Let me specify"
+    description: "I'll type my country and state/region"
+  - label: "Skip for now"
+    description: "I'll add this to company-profile.md manually later"
+```
+
 ## Writing company-profile.md
 
-After all 8 questions, write the profile to `company-profile.md` in the project root using this exact template. Only include what the founder actually said. Mark anything not provided as "Not yet determined."
+After all 10 questions, write the profile to `company-profile.md` in the project root using this exact template. Only include what the founder actually said. Mark anything not provided as "Not yet determined."
 
 ```markdown
 # Company Profile
@@ -192,6 +221,15 @@ After all 8 questions, write the profile to `company-profile.md` in the project 
 | **Stage** | [from Q2] |
 | **Revenue Model** | [from Q3] |
 | **Team Size** | [from Q4] |
+
+## Founder Context
+
+| Field | Details |
+|-------|---------|
+| **Status** | [from Q9] |
+| **Location** | [from Q10] |
+
+> Roles: use status and location to infer relevant constraints — IP ownership risks, applicable compliance (GDPR, CCPA, COPPA), tax implications, employer agreements. Do not apply a fixed checklist; reason from what's actually here.
 
 ## Product / Service
 
