@@ -36,6 +36,8 @@
 - [ ] **Post the launch write-up to dev.to or Hashnode** — CMO can draft the article ("How I used an AI c-suite to plan my own project's launch"); you post it under your own name. This drives ongoing organic search traffic long after HN fades and establishes the project's story as a reference piece. [Added by COO, 2026-03-06]
   - NOTE: [CMO, 2026-03-07] Draft written to `docs/marketing/2026-03-07-devto-article.md`. Ready to post under your name. Title: "I used an AI c-suite to plan my project's launch — here's what it actually produced."
 
+- [ ] **Validate the 3D-model painting business idea** — Choose the first city/community, make sample pieces, and complete five paid pilot commissions before investing in a 3D printer. Track actual labor, materials, rework, and customer acquisition to test the assumptions in `docs/ceo/2026-11-15-3d-model-painting-business-plan.md`. [Added by CEO, 2026-11-15]
+
 - [x] **Run c-suite on itself for one real decision and document the output** — Pick a real business question about growing this project (e.g., `/cmo Who should we target first: solo technical founders or non-technical founders?`). Run it. Save the output to `docs/examples/`. Use this as the primary demo artifact in all launch posts. The product sells itself best when people see actual output, not just feature lists. [Added by Board, 2026-03-02]
   - NOTE: ran board-meeting and CMO suggested to make post on Show HN.
 
