@@ -1,6 +1,6 @@
 # I used an AI c-suite to plan my project's launch — here's what it actually produced
 
-*Cross-posted from personal experience building [c-suite-skills](https://github.com/pollow/c-suite-skills)*
+*Cross-posted from personal experience building* [*c-suite-skills*](https://github.com/pollow/c-suite-skills)
 
 ---
 
